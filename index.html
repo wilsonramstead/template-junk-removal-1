@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- DEMO: remove noindex when site goes live -->
+<meta name="robots" content="noindex">
+
+<title>Loadout Junk Removal | Junk Hauling in the Tampa Bay Area — Family Owned</title>
+<meta name="description" content="Loadout Junk Removal is a family-owned junk removal & hauling crew in the Tampa Bay Area. Furniture, appliances, garage & property cleanouts. Fair prices, fast & flexible same-day service. Text a photo for a quote — call or text (727) 555-0145.">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Loadout Junk Removal | Tampa Bay Area — Family Owned">
+<meta property="og:description" content="Family-owned junk removal & hauling in the Tampa Bay Area. Furniture, appliances, whole-property cleanouts. Fair prices, fast & flexible. 5★ rated. Text a photo, get a quote — (727) 555-0145.">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://wilsonramstead.github.io/template-junk-removal-1/">
+<meta property="og:image" content="https://wilsonramstead.github.io/template-junk-removal-1/assets/og-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Loadout Junk Removal | Tampa Bay Area — Family Owned">
+<meta name="twitter:description" content="Family-owned junk removal & hauling in the Tampa Bay Area. Fair prices, fast & flexible same-day service. 5★ rated. Text a photo for a quote — (727) 555-0145.">
+<meta name="twitter:image" content="https://wilsonramstead.github.io/template-junk-removal-1/assets/og-preview.jpg">
+
+<meta name="theme-color" content="#20262F">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --white:#FFFFFF;
+  --paper:#F6F5F2;        /* soft off-white band */
+  --tint:#FCEDE5;         /* soft orange tint band */
+  --slate:#20262F;        /* near-black slate */
+  --slate-2:#2A313C;      /* raised slate */
+  --slate-3:#333B47;
+  --ink:#1C222B;          /* text on light */
+  --ink-soft:#57606E;     /* muted body text */
+  --orange:#FF5A1F;       /* bold hauler orange (display/large) */
+  --orange-deep:#E1430F;  /* solid buttons w/ white text */
+  --orange-soft:#FFE1D2;  /* chip fills on light */
+  --line:rgba(28,34,43,.14);
+  --line-d:rgba(255,255,255,.14);
+  --shadow-sm:0 2px 6px -2px rgba(20,26,34,.18);
+  --shadow:0 22px 50px -26px rgba(20,26,34,.55);
+  --shadow-orange:0 16px 30px -14px rgba(225,67,15,.6);
+  --radius:16px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--white);
+  color:var(--ink);
+  font-family:"Mulish",system-ui,"Segoe UI",Arial,sans-serif;
+  font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,.display{
+  font-family:"Patua One",Georgia,serif;
+  font-weight:400;line-height:1.04;margin:0;letter-spacing:.2px;
+}
+p{margin:0 0 1rem}
+p:last-child{margin-bottom:0}
+
+.wrap{width:100%;max-width:1130px;margin:0 auto;padding-left:22px;padding-right:22px}
+.section{padding-top:72px;padding-bottom:72px}
+
+/* hazard stripe accent (load-zone energy) */
+.stripe{
+  height:8px;
+  background:repeating-linear-gradient(-45deg,var(--slate) 0 15px,var(--orange) 15px 30px);
+}
+
+.eyebrow{
+  font-family:"Mulish",sans-serif;font-weight:800;
+  text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;
+  color:var(--orange-deep);margin:0 0 15px;display:flex;align-items:center;gap:11px;
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--orange);border-radius:2px}
+.section-head{max-width:720px;margin:0 0 42px}
+.section-head h2{font-size:clamp(1.9rem,4.6vw,3.2rem)}
+.section-head p{color:var(--ink-soft);font-size:1rem;margin-top:16px}
+
+/* ---------- buttons ---------- */
+.btn{
+  position:relative;overflow:hidden;
+  display:inline-flex;align-items:center;gap:.55rem;justify-content:center;
+  font-family:"Mulish",sans-serif;font-weight:800;font-size:.95rem;
+  letter-spacing:.03em;text-decoration:none;cursor:pointer;
+  padding:14px 22px;border-radius:12px;border:2px solid transparent;
+  line-height:1.1;transition:transform .16s var(--ease),box-shadow .16s var(--ease),background .16s var(--ease);
+}
+.btn svg{width:18px;height:18px;flex:none;transition:transform .16s var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+.btn-primary{background:var(--orange-deep);color:#fff;box-shadow:var(--shadow-orange)}
+.btn-primary::after{
+  content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);
+  transform:skewX(-18deg);transition:left .6s var(--ease);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 22px 36px -14px rgba(225,67,15,.75)}
+.btn-primary:hover::after{left:130%}
+.btn-primary:hover svg{transform:translateX(0)}
+.btn-light{background:var(--white);color:var(--ink);box-shadow:var(--shadow-sm)}
+.btn-light:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:currentColor}
+.btn-ghost:hover{transform:translateY(-2px)}
+a:focus-visible,button:focus-visible,.btn:focus-visible{
+  outline:3px solid var(--orange);outline-offset:3px;border-radius:12px;
+}
+
+/* ---------- header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(9px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{display:flex;align-items:center;gap:14px;min-height:66px;padding-top:9px;padding-bottom:9px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);min-width:0}
+.brand-mark{
+  flex:none;width:44px;height:44px;border-radius:12px;
+  background:linear-gradient(140deg,var(--orange),var(--orange-deep));color:#fff;
+  display:grid;place-items:center;box-shadow:var(--shadow-orange);
+}
+.brand-mark svg{width:25px;height:25px}
+.brand-name{
+  font-family:"Patua One",serif;
+  font-size:1.24rem;line-height:1;letter-spacing:.01em;color:var(--ink);
+}
+.brand-name b{color:var(--orange-deep);font-weight:400}
+.brand-name span{
+  display:block;font-family:"Mulish",sans-serif;font-weight:700;
+  font-size:.58rem;letter-spacing:.18em;color:var(--ink-soft);margin-top:5px;text-transform:uppercase;
+}
+.header-nav{display:none;margin-left:auto;gap:26px;align-items:center}
+.header-nav a{
+  text-decoration:none;font-weight:700;font-size:.86rem;color:var(--ink);
+  padding:6px 2px;border-bottom:2px solid transparent;transition:border-color .15s var(--ease),color .15s var(--ease);
+}
+.header-nav a:hover{border-bottom-color:var(--orange);color:var(--orange-deep)}
+.header-cta{margin-left:auto;display:flex;gap:9px;align-items:center}
+.header-call{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--orange-deep);color:#fff;text-decoration:none;
+  font-family:"Mulish",sans-serif;font-weight:800;font-size:.92rem;
+  padding:11px 15px;border-radius:11px;white-space:nowrap;line-height:1;
+  box-shadow:var(--shadow-orange);transition:transform .15s var(--ease)}
+.header-call:hover{transform:translateY(-1px)}
+.header-call svg{width:17px;height:17px;flex:none}
+.header-call .lbl{display:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;color:#fff;isolation:isolate;display:flex;align-items:center;
+  min-height:clamp(560px,86vh,800px)}
+.hero-bg{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.hero-bg img{width:100%;height:100%;object-fit:cover;animation:kb 22s ease-out both}
+@keyframes kb{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,rgba(20,26,34,.5) 0%,rgba(20,26,34,.62) 48%,rgba(20,26,34,.9) 100%),
+    linear-gradient(78deg,rgba(20,26,34,.86) 6%,rgba(20,26,34,.2) 66%);
+}
+.hero-inner{padding-top:64px;padding-bottom:70px;max-width:730px}
+.hero .badge{
+  display:inline-flex;align-items:center;gap:9px;flex-wrap:wrap;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.26);
+  padding:8px 15px;border-radius:999px;font-weight:700;font-size:.8rem;
+  letter-spacing:.01em;margin-bottom:24px;backdrop-filter:blur(4px);
+}
+.hero .badge .stars{color:var(--orange);letter-spacing:.06em}
+.hero h1{
+  font-size:clamp(2.7rem,8.4vw,4.7rem);
+  text-shadow:0 4px 30px rgba(0,0,0,.4);max-width:14ch;
+}
+.hero h1 em{font-style:normal;color:var(--orange);display:block}
+.hero .lede{
+  font-size:clamp(1rem,2.1vw,1.16rem);line-height:1.6;
+  color:#EBECEF;max-width:590px;margin:22px 0 30px;font-weight:400;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+/* glass trust chip */
+.hero-chip{
+  margin-top:28px;display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;
+  background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);
+  border-radius:15px;padding:16px 20px;backdrop-filter:blur(6px);max-width:640px;
+  box-shadow:0 20px 44px -28px rgba(0,0,0,.7);
+}
+.hero-chip .ci{display:flex;align-items:center;gap:10px;min-width:0}
+.hero-chip .ci svg{width:19px;height:19px;flex:none;color:var(--orange)}
+.hero-chip .k{font-family:"Patua One",serif;font-size:1.3rem;color:#fff;line-height:1}
+.hero-chip .stars{color:var(--orange);letter-spacing:.05em;font-size:.9rem}
+.hero-chip small{display:block;color:#D7DAE0;font-size:.74rem;font-weight:400;letter-spacing:.02em}
+.hero-chip b{font-weight:700;font-size:.86rem;color:#fff}
+.hero-chip .div{width:1px;align-self:stretch;background:rgba(255,255,255,.18)}
+
+/* ---------- trust strip ---------- */
+.trust{background:var(--slate);color:#fff}
+.trust-inner{display:flex;flex-wrap:wrap;gap:14px 30px;padding-top:22px;padding-bottom:22px;
+  justify-content:space-between;align-items:center}
+.trust-item{display:flex;align-items:center;gap:12px;min-width:0;font-weight:700;font-size:.9rem}
+.trust-item svg{width:22px;height:22px;flex:none;color:var(--orange)}
+.trust-item .k{font-family:"Patua One",serif;font-size:1.5rem;color:var(--orange);line-height:1}
+.trust-item small{color:#B8BEC8;font-weight:400;font-size:.78rem;display:block;letter-spacing:.02em}
+
+/* ---------- hook / how it works ---------- */
+.hook{background:var(--slate);color:#fff;position:relative;overflow:hidden}
+.hook::before{content:"";position:absolute;top:-30%;right:-10%;width:520px;height:520px;
+  background:radial-gradient(circle,rgba(255,90,31,.16),transparent 70%);pointer-events:none}
+.hook .wrap{position:relative}
+.hook-grid{display:grid;gap:36px;align-items:center}
+.hook h2{font-size:clamp(2rem,5.2vw,3.2rem)}
+.hook h2 em{font-style:normal;color:var(--orange)}
+.hook .lead{color:#CDD2DA;font-size:1.02rem;margin-top:16px}
+.hook .lead em{color:#fff;font-style:italic}
+.hook-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.steps{display:grid;gap:14px}
+.step{display:flex;gap:16px;align-items:flex-start;
+  background:rgba(255,255,255,.045);border:1px solid var(--line-d);
+  padding:16px 18px;border-radius:14px;min-width:0;transition:transform .16s var(--ease),background .16s var(--ease)}
+.step:hover{transform:translateY(-2px);background:rgba(255,255,255,.07)}
+.step-num{flex:none;width:40px;height:40px;border-radius:11px;
+  background:linear-gradient(140deg,var(--orange),var(--orange-deep));color:#fff;
+  font-family:"Patua One",serif;font-size:1.2rem;display:grid;place-items:center;line-height:1}
+.step h3{font-size:1.1rem;font-family:"Patua One",serif;font-weight:400;letter-spacing:.2px;color:#fff}
+.step p{margin:5px 0 0;font-size:.9rem;color:#C4CAD3}
+
+/* ---------- services ---------- */
+.services{background:var(--white)}
+.cards{display:grid;grid-template-columns:1fr;gap:18px}
+.card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 24px;min-width:0;position:relative;overflow:hidden;
+  box-shadow:var(--shadow-sm);
+  transition:transform .18s var(--ease),box-shadow .18s var(--ease),border-color .18s var(--ease);
+}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(225,67,15,.35)}
+.card .ic{width:52px;height:52px;border-radius:14px;margin-bottom:16px;display:grid;place-items:center;
+  background:linear-gradient(140deg,var(--orange-soft),#FFD2BE);color:var(--orange-deep)}
+.card .ic svg{width:26px;height:26px}
+.card h3{font-size:1.24rem;font-family:"Patua One",serif;font-weight:400;letter-spacing:.2px}
+.card p{margin-top:10px;color:var(--ink-soft);font-size:.93rem}
+.card.feature{background:var(--slate);color:#fff;border-color:var(--slate)}
+.card.feature .ic{background:rgba(255,90,31,.2);color:var(--orange)}
+.card.feature p{color:#C4CAD3}
+.card .tag{display:inline-block;margin-top:15px;font-weight:700;font-size:.72rem;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--orange)}
+.card.has-img{padding:0}
+.card.has-img .cimg{aspect-ratio:16/10;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0}
+.card.has-img .cimg img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.card.has-img:hover .cimg img{transform:scale(1.05)}
+.card.has-img .cbody{padding:22px 24px 26px}
+
+/* ---------- why us ---------- */
+.why{background:var(--paper)}
+.why-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.why-item{display:flex;gap:15px;align-items:flex-start;min-width:0}
+.why-item .chk{flex:none;width:42px;height:42px;border-radius:12px;
+  background:linear-gradient(140deg,var(--orange),var(--orange-deep));color:#fff;display:grid;place-items:center}
+.why-item .chk svg{width:21px;height:21px}
+.why-item h3{font-size:1.14rem;font-family:"Patua One",serif;font-weight:400;letter-spacing:.2px}
+.why-item p{margin-top:5px;color:var(--ink-soft);font-size:.9rem}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--slate);color:#fff}
+.reviews .section-head h2{color:#fff}
+.reviews .section-head p{color:#C4CAD3}
+.rev-rating{display:inline-flex;align-items:center;gap:12px;flex-wrap:wrap;
+  background:rgba(255,255,255,.06);border:1px solid var(--line-d);
+  padding:10px 18px;border-radius:999px;margin-top:18px;font-weight:700}
+.rev-rating .big{font-family:"Patua One",serif;font-size:1.7rem;color:var(--orange);line-height:1}
+.rev-rating .stars{color:var(--orange);letter-spacing:.08em;font-size:1.02rem}
+.rev-rating span{color:#C4CAD3;font-weight:400;font-size:.86rem}
+.rev-grid{display:grid;grid-template-columns:1fr;gap:18px}
+.quote{background:rgba(255,255,255,.045);border:1px solid var(--line-d);
+  border-radius:var(--radius);padding:24px 22px;min-width:0;display:flex;flex-direction:column;
+  transition:transform .16s var(--ease),background .16s var(--ease)}
+.quote:hover{transform:translateY(-3px);background:rgba(255,255,255,.07)}
+.quote .stars{color:var(--orange);letter-spacing:.08em;margin-bottom:12px;font-size:.98rem}
+.quote blockquote{margin:0;font-size:.96rem;line-height:1.62;color:#E7E9ED}
+.quote .who{margin-top:18px;padding-top:15px;border-top:1px solid var(--line-d);
+  display:flex;align-items:center;gap:12px}
+.quote .av{flex:none;width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(140deg,var(--orange),var(--orange-deep));color:#fff;display:grid;place-items:center;
+  font-family:"Patua One",serif;font-size:1.05rem}
+.quote .who b{font-weight:700;font-size:.92rem;color:#fff}
+.quote .who small{display:block;color:#A9B0BB;font-size:.76rem;font-weight:400}
+
+/* ---------- our work ---------- */
+.work{background:var(--white)}
+.work-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.shot{position:relative;border-radius:var(--radius);overflow:hidden;
+  border:1px solid var(--line);background:var(--slate);aspect-ratio:4/3;box-shadow:var(--shadow-sm)}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.shot:hover img{transform:scale(1.06)}
+.shot figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 13px;color:#fff;
+  font-weight:700;font-size:.85rem;background:linear-gradient(180deg,transparent,rgba(20,26,34,.9))}
+.work-note{margin-top:22px;font-size:.8rem;color:var(--ink-soft);font-weight:400;
+  display:flex;gap:9px;align-items:flex-start}
+.work-note svg{width:16px;height:16px;flex:none;margin-top:3px;color:var(--orange-deep)}
+
+/* ---------- big CTA ---------- */
+.cta{position:relative;color:#fff;isolation:isolate;text-align:center}
+.cta-bg{position:absolute;inset:0;z-index:-2;background:linear-gradient(135deg,var(--orange),var(--orange-deep))}
+.cta-bg::after{content:"";position:absolute;inset:0;opacity:.5;
+  background:repeating-linear-gradient(-45deg,rgba(0,0,0,.12) 0 20px,transparent 20px 40px)}
+.cta h2{font-size:clamp(2.1rem,5.6vw,3.4rem);text-shadow:0 3px 18px rgba(0,0,0,.22)}
+.cta p{max-width:560px;margin:16px auto 0;font-size:1.02rem;color:#FFF1EA;font-weight:400}
+.cta-actions{display:flex;flex-wrap:wrap;gap:13px;justify-content:center;margin-top:30px}
+.cta-phone{margin-top:22px;font-family:"Patua One",serif;font-size:clamp(1.9rem,6vw,2.6rem);
+  color:#fff;text-decoration:none;display:inline-block;letter-spacing:.01em}
+.cta-phone:hover{color:var(--slate)}
+
+/* ---------- footer ---------- */
+.footer{background:var(--slate);color:#B8BEC8;padding-top:56px;padding-bottom:34px}
+.footer-grid{display:grid;grid-template-columns:1fr;gap:30px;margin-bottom:34px}
+.footer h4{font-family:"Mulish",sans-serif;font-weight:800;text-transform:uppercase;
+  letter-spacing:.13em;font-size:.72rem;color:var(--orange);margin:0 0 15px}
+.footer a{color:#D7DAE0;text-decoration:none}
+.footer a:hover{color:#fff}
+.footer .brand{margin-bottom:16px}
+.footer .brand-name{color:#fff}
+.footer .about{font-size:.88rem;line-height:1.65;max-width:340px;color:#B8BEC8}
+.foot-list{list-style:none;margin:0;padding:0;display:grid;gap:11px;font-size:.9rem}
+.foot-list li{display:flex;gap:10px;align-items:flex-start}
+.foot-list svg{width:17px;height:17px;flex:none;margin-top:4px;color:var(--orange)}
+.footer-bottom{border-top:1px solid var(--line-d);padding-top:22px;
+  display:flex;flex-wrap:wrap;gap:12px 20px;justify-content:space-between;align-items:center;font-size:.78rem}
+.footer-bottom a{color:#fff;font-weight:700}
+.serving{font-weight:700;color:#D7DAE0}
+
+/* ---------- reveal anim (finalized butter) ---------- */
+.reveal{opacity:0;transform:translateY(26px) scale(.975);filter:blur(7px);
+  transition:opacity .8s var(--ease),transform .8s var(--ease),filter .8s var(--ease)}
+.reveal.in{opacity:1;transform:none;filter:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+/* ---------- responsive ---------- */
+@media(min-width:600px){
+  .cards{grid-template-columns:1fr 1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .rev-grid{grid-template-columns:1fr 1fr}
+  .work-grid{grid-template-columns:1fr 1fr}
+  .header-call .lbl{display:inline}
+}
+@media(min-width:880px){
+  body{font-size:16.5px}
+  .section{padding-top:94px;padding-bottom:94px}
+  .header-nav{display:flex}
+  .header-nav ~ .header-cta{margin-left:22px}
+  .hook-grid{grid-template-columns:1.05fr 1fr;gap:54px}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .card.wide{grid-column:span 3}
+  .why-grid{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:1.4fr 1fr 1fr}
+  .work-grid{grid-template-columns:repeat(4,1fr)}
+  .work-grid .shot.big{grid-column:span 2;grid-row:span 1;aspect-ratio:auto}
+}
+
+/* long brand name wraps in mobile header, never clips under call button */
+@media(max-width:560px){
+  .brand-name{font-size:1rem;line-height:1.15;max-width:11em}
+  .brand-name span{font-size:.52rem}
+  .header-inner{gap:10px}
+  .brand-mark{width:40px;height:40px}
+  .brand-mark svg{width:22px;height:22px}
+  .hero-chip{gap:12px 18px;padding:14px 16px}
+  .hero-chip .div{display:none}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none;filter:none;transition:none}
+  .hero-bg img{animation:none}
+  .card:hover,.btn:hover,.shot:hover img,.step:hover,.quote:hover{transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="stripe" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Loadout Junk Removal home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v10H3z"/><path d="M14 9h4l3 3v4h-7"/><circle cx="6.5" cy="18.5" r="1.9"/><circle cx="17.5" cy="18.5" r="1.9"/></svg>
+      </span>
+      <span class="brand-name">Loadout <b>Junk Removal</b><span>Tampa Bay Area</span></span>
+    </a>
+
+    <nav class="header-nav" aria-label="Primary">
+      <a href="#how">How It Works</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Loadout</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#work">Our Work</a>
+    </nav>
+
+    <div class="header-cta">
+      <a class="header-call" href="tel:+17275550145">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="lbl">(727)&nbsp;555-0145</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/hero.jpg" alt="A junk removal crew loading unwanted items into a truck to haul away" fetchpriority="high">
+    </div>
+    <div class="wrap hero-inner">
+      <p class="badge"><span class="stars">★★★★★</span> 5-star rated &nbsp;·&nbsp; Same-day service &nbsp;·&nbsp; Family owned</p>
+      <h1>Got junk?<em>We'll haul it.</em></h1>
+      <p class="lede">Loadout Junk Removal is your family-owned crew for fast, friendly junk hauling in the Tampa Bay Area. Send a couple of photos, get a fair price, and we'll load it up and haul it off &mdash; often the very same day.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="sms:+17275550145">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Text a photo for a quote
+        </a>
+        <a class="btn btn-light" href="tel:+17275550145">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (727) 555-0145
+        </a>
+      </div>
+      <div class="hero-chip">
+        <div class="ci"><span class="k">5.0</span><div><span class="stars">★★★★★</span><small>Rated by locals</small></div></div>
+        <span class="div" aria-hidden="true"></span>
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-5h6v5"/></svg><div><b>Family owned</b><small>Not a franchise</small></div></div>
+        <span class="div" aria-hidden="true"></span>
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Same-day service</b><small>Flexible scheduling</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust" aria-label="At a glance">
+    <div class="wrap trust-inner">
+      <div class="trust-item"><span class="k">5.0</span><div><span class="stars" style="color:var(--orange)">★★★★★</span><small>Rated by locals</small></div></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div>Tampa Bay<small>&amp; the surrounding area</small></div></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg><div>Same-day &amp; flexible<small>often out the same day</small></div></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg><div>Fair, upfront prices<small>no surprises</small></div></div>
+    </div>
+  </section>
+
+  <!-- ============ HOOK / HOW IT WORKS ============ -->
+  <section class="hook section" id="how">
+    <div class="wrap">
+      <div class="hook-grid">
+        <div class="reveal">
+          <p class="eyebrow" style="color:var(--orange)">The easiest quote you'll ever get</p>
+          <h2>Text us a photo.<em>Get a real price.</em></h2>
+          <p class="lead">No waiting around for someone to come measure your pile. Just send over a couple of pictures of whatever needs to go &mdash; furniture, appliances, a garage full of stuff, a whole property &mdash; and we get right back to you with a fair, upfront quote. As one customer put it: <em>&ldquo;Excellent communication &mdash; quick to respond, and my large bed was removed within a day.&rdquo;</em></p>
+          <div class="hook-actions">
+            <a class="btn btn-primary" href="sms:+17275550145">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              Text (727) 555-0145
+            </a>
+            <a class="btn btn-ghost" href="tel:+17275550145" style="color:#fff;border-color:rgba(255,255,255,.5)">Or give us a call</a>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><div class="step-num">1</div><div><h3>Call or text us</h3><p>Reach out any time at (727) 555-0145 &mdash; a quick call or text both work great.</p></div></div>
+          <div class="step reveal d1"><div class="step-num">2</div><div><h3>Send a couple photos</h3><p>Snap the junk, the old couch, the fridge, the whole garage &mdash; whatever's got to go.</p></div></div>
+          <div class="step reveal d2"><div class="step-num">3</div><div><h3>Get a fair price</h3><p>Quick response, a straight answer, and very reasonable pricing. No runaround, no surprises.</p></div></div>
+          <div class="step reveal d3"><div class="step-num">4</div><div><h3>We load it &amp; haul it off</h3><p>We show up on time, load it all up, and haul it away &mdash; leaving your space clean and clear.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services section" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What we haul</p>
+        <h2>If it needs to go, we'll take it.</h2>
+        <p>From a single old mattress to a whole property cleanout &mdash; if it needs to be loaded up and hauled off, Loadout is the crew to call.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M5 6l1 14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2l1-14"/></svg></div>
+          <h3>Junk Removal &amp; Hauling</h3>
+          <p>Piles, bags, boxes, yard debris and general junk &mdash; we load it all up and haul it away so you don't have to lift a thing.</p>
+        </article>
+        <article class="card reveal d1">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6"/><path d="M4 14h16"/><path d="M6 18v2"/><path d="M18 18v2"/><path d="M8 10V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3"/></svg></div>
+          <h3>Furniture &amp; Appliance Removal</h3>
+          <p>Old couches, mattresses, dressers, fridges, washers &mdash; the big, heavy, awkward stuff. We'll get it out and gone for you.</p>
+        </article>
+        <article class="card reveal d2">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/><path d="M3 13h18"/></svg></div>
+          <h3>Garage &amp; Property Cleanouts</h3>
+          <p>Garages, sheds, estates and rentals between tenants &mdash; we can help with just about any property, clearing the whole space out.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M9 15l2 2 4-4"/></svg></div>
+          <h3>Same-Day &amp; Flexible</h3>
+          <p>Need it gone fast? we work around your schedule and often gets to jobs the very same day &mdash; even in a pinch.</p>
+        </article>
+        <article class="card reveal d1">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg></div>
+          <h3>Neat &amp; Detail-Oriented</h3>
+          <p>our crew is neat, detail oriented and genuinely hard-working &mdash; the space is left clean and ready to use when the job's done.</p>
+        </article>
+        <article class="card feature reveal d2">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+          <h3>Free Photo Quotes</h3>
+          <p>Text over a picture and skip the wait for an in-person estimate. It's the fastest way to a fair price &mdash; and how most folks get started.</p>
+          <span class="tag">Text (727) 555-0145</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="why section" id="why">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Why folks keep calling us</p>
+        <h2>Reliable, fair, and family owned.</h2>
+        <p>The same things come up over and over in our reviews &mdash; here's what you can count on every time.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-5h6v5"/><path d="M3 21h18"/></svg></div><div><h3>Family owned</h3><p>You get the care of a family-owned business &mdash; not the runaround of some franchise junk crew.</p></div></div>
+        <div class="why-item reveal d1"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h3>Always on time</h3><p>Reliable and always on time &mdash; we show up when we say we will and respects your schedule.</p></div></div>
+        <div class="why-item reveal d2"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div><h3>Very fair prices</h3><p>Reasonable, upfront pricing &mdash; and because you send photos first, you know the number before we pull up.</p></div></div>
+        <div class="why-item reveal"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div><div><h3>Quick to respond</h3><p>Excellent communication &mdash; we are quick to answer your questions and get you a straight answer fast.</p></div></div>
+        <div class="why-item reveal d1"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div><h3>Accommodating</h3><p>No matter the situation, we make time &mdash; we've helped customers, their families, and their neighbors alike.</p></div></div>
+        <div class="why-item reveal d2"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div><h3>Hard working &amp; kind</h3><p>Friendly, professional and a real hard worker &mdash; the kind of guy customers say they'll only ever call again.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="reviews section" id="reviews">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow" style="color:var(--orange)">What customers say</p>
+        <h2>Rated five stars by the neighborhood.</h2>
+        <div class="rev-rating"><span class="big">5.0</span><span class="stars">★★★★★</span><span>Placeholder reviews &mdash; swap in the client's own</span></div>
+      </div>
+      <div class="rev-grid">
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>&ldquo;I've used this crew several times now and they've always done an amazing job. Very friendly, great communication, always on time and great prices. Can't speak highly enough &mdash; I won't call anyone else!&rdquo;</blockquote>
+          <figcaption class="who"><span class="av" aria-hidden="true">M</span><div><b>Marcus H.</b><small>Placeholder review</small></div></figcaption>
+        </figure>
+        <figure class="quote reveal d1">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>&ldquo;These guys have been an absolute lifesaver every time I've needed junk hauled off! Reliable, always on time, and they work fast without cutting corners. Very reasonable prices and the whole thing is stress-free.&rdquo;</blockquote>
+          <figcaption class="who"><span class="av" aria-hidden="true">L</span><div><b>Lena F.</b><small>Placeholder review</small></div></figcaption>
+        </figure>
+        <figure class="quote reveal d2">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>&ldquo;The dump closed early and I was stuck with an old mattress and two kids in the car. Called their number and without hesitation they told me to bring it by. Extremely kind and professional people.&rdquo;</blockquote>
+          <figcaption class="who"><span class="av" aria-hidden="true">P</span><div><b>Priya K.</b><small>Placeholder review</small></div></figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>&ldquo;Excellent communication &mdash; quick to respond to all of my questions. I had a big bed frame out of the house within a day. Personable and conscientious. Highly recommend them.&rdquo;</blockquote>
+          <figcaption class="who"><span class="av" aria-hidden="true">G</span><div><b>Gordon A.</b><small>Placeholder review</small></div></figcaption>
+        </figure>
+        <figure class="quote reveal d1">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>&ldquo;They can handle just about any property. Neat, detail oriented and really hard working. You get the service of a family owned business instead of some franchise junk crew.&rdquo;</blockquote>
+          <figcaption class="who"><span class="av" aria-hidden="true">B</span><div><b>Brianna O.</b><small>Placeholder review</small></div></figcaption>
+        </figure>
+        <figure class="quote reveal d2" style="justify-content:center;align-items:flex-start;background:linear-gradient(140deg,rgba(255,90,31,.14),rgba(255,90,31,.04));border-color:rgba(255,90,31,.3)">
+          <div class="stars" style="font-size:1.1rem">★★★★★</div>
+          <blockquote style="font-size:1.05rem;color:#fff">Every single person I've sent their way comes back telling me how great they were &mdash; that speaks volumes.</blockquote>
+          <figcaption class="who" style="border-top-color:rgba(255,255,255,.16)"><span class="av" aria-hidden="true" style="background:var(--white);color:var(--orange-deep)">★</span><div><b>What customers keep saying</b><small>5&#9733; rated</small></div></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUR WORK ============ -->
+  <section class="work section" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">On the job</p>
+        <h2>Loaded up &amp; hauled off</h2>
+        <p>Cleanouts, loaded trucks, and hauled-away bulky items &mdash; the kind of work we show up for every day around the Tampa Bay Area.</p>
+      </div>
+      <div class="work-grid">
+        <figure class="shot reveal"><img loading="lazy" src="assets/svc-cleanout.jpg" alt="A cluttered garage full of tools, furniture and boxes ready for a cleanout"><figcaption>Garage &amp; property cleanouts</figcaption></figure>
+        <figure class="shot reveal d1"><img loading="lazy" src="assets/work-loaded.jpg" alt="The open back of a work truck loaded up with items to be hauled off"><figcaption>Loaded up &amp; ready to haul</figcaption></figure>
+        <figure class="shot reveal d2"><img loading="lazy" src="assets/svc-furniture.jpg" alt="A stack of old chairs and tables set out for furniture removal"><figcaption>Old furniture removal</figcaption></figure>
+        <figure class="shot reveal d3"><img loading="lazy" src="assets/work-bulky.jpg" alt="Bulky old upholstered chairs set outside to be hauled away"><figcaption>Bulky items taken away</figcaption></figure>
+      </div>
+      <p class="work-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Sample imagery shown as placeholders &mdash; we'll swap in real photos of the client's trucks and jobs once the site goes live.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ BIG CTA ============ -->
+  <section class="cta section">
+    <div class="cta-bg" aria-hidden="true"></div>
+    <div class="wrap reveal">
+      <h2>Ready to get it gone?</h2>
+      <p>Text us a couple of photos or give us a call &mdash; you'll have a fair price in no time, and we'll get it loaded up and hauled off, often the same day.</p>
+      <div class="cta-actions">
+        <a class="btn btn-light" href="sms:+17275550145">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Text us photos
+        </a>
+        <a class="btn btn-ghost" href="tel:+17275550145" style="color:#fff;border-color:rgba(255,255,255,.75)">Call instead</a>
+      </div>
+      <a class="cta-phone" href="tel:+17275550145">(727) 555-0145</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#top" aria-label="Loadout Junk Removal">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v10H3z"/><path d="M14 9h4l3 3v4h-7"/><circle cx="6.5" cy="18.5" r="1.9"/><circle cx="17.5" cy="18.5" r="1.9"/></svg>
+          </span>
+          <span class="brand-name">Loadout <b style="color:var(--orange)">Junk Removal</b><span>Tampa Bay Area</span></span>
+        </a>
+        <p class="about">Family-owned junk removal, hauling and cleanouts for the Tampa Bay Area. Text a photo, get a fair quote, and we'll load it up and haul it off.</p>
+      </div>
+      <div>
+        <h4>Get a quote</h4>
+        <ul class="foot-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+17275550145">Call (727) 555-0145</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><a href="sms:+17275550145">Text us a photo</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Same-day &amp; flexible scheduling</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Where we work</h4>
+        <ul class="foot-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Based in the Tampa Bay Area</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span class="serving">Serving the Tampa Bay Area</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Loadout Junk Removal LLC &middot; Tampa Bay Area</span>
+      <span>Website by <a href="https://wilsoninnovations.net" rel="noopener">Wilson Innovations</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LocalBusiness JSON-LD ============ -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MovingCompany",
+  "name":"Loadout Junk Removal LLC",
+  "image":"https://wilsonramstead.github.io/template-junk-removal-1/assets/og-preview.jpg",
+  "url":"https://wilsonramstead.github.io/template-junk-removal-1/",
+  "telephone":"+17275550145",
+  "areaServed":[
+    {"@type":"AdministrativeArea","name":"Tampa Bay Area, FL"}
+  ],
+  "description":"Family-owned junk removal, hauling, furniture and appliance removal, and property cleanouts serving the Tampa Bay Area of Florida. Fair prices and fast, flexible same-day service. Free photo-based quotes by call or text."
+}
+</script>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!('IntersectionObserver'in window)){
+    els.forEach(function(e){e.classList.add('in');});
+    return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+    });
+  },{threshold:0,rootMargin:'0px 0px 12% 0px'});
+  els.forEach(function(e){io.observe(e);});
+  // momentum-scroll safety sweep: reveal anything already in view
+  function sweep(){
+    els.forEach(function(e){
+      if(e.classList.contains('in'))return;
+      var r=e.getBoundingClientRect();
+      if(r.top < (window.innerHeight||document.documentElement.clientHeight)*1.12){
+        e.classList.add('in');io.unobserve(e);
+      }
+    });
+  }
+  window.addEventListener('load',sweep);
+  window.addEventListener('scroll',function(){window.requestAnimationFrame(sweep);},{passive:true});
+})();
+</script>
+
+</body>
+</html>
